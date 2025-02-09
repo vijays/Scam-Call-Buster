@@ -60,6 +60,7 @@ If it finds it with a high probability, it flags the same to the user.
 - We could design a mobile app where it automatically has access to the ongoing call or can be handily available to analyse landline or other mobile calls on speaker.
 - It could speak to the scammer on behalf of the user using Text-To-Speech (TTS) and use algorithms to probe more about scammer's modus operandi, also saving user from trauma.
 - The app could expand to include other sources of fraud initiation e.g. chats, emails etc.
+- It could be trained to understand and work with more languages
 - It could partner with government agencies and connect with their servers and APIs for the following:
   - include in it's analysis, a list of known suspect call numbers, IP addresses, etc.
   - add new types of fraud themes in its analysis as they evolve.
