@@ -30,13 +30,13 @@ It will be activated when a call starts.\
 If the number is a known suspect, it will flag it to the user.\
 It will listen to the conversation and transcribe it as it progresses.\
 Simultaneously, it keeps analysing the content for a potential fraud theme.\
-If it finds a matching theme, it flags it to the user.
+If it finds a matching theme, it will flag it to the user.
 
 ## Data sources and AI methods
 
 The app listens to the conversation audio in chunks e.g. say 5 seconds and streams it to a service which transcribes it, i.e. **Speech-To-Text (STT)**, also known as **Automatic Speech Recognition (ASR)**. We can use 3rd party APIs for this e.g. Google Cloud STT. These chunks are appended to a data structure which builds as a conversation.
 
-The app keeps analysing this conversation as it builds using AI / ML models, e.g. **Random Forest**. However, as mobile devices may not have the computational power needed in real time for this, we can implement this too on the cloud as our own service e.g. on **Amazon Web Services (AWS)**, and access it using an API.
+The app keeps analysing the transcript as it builds using AI / ML models, e.g. **Random Forest**. However, as mobile devices may not have the computational power needed in real time for this, we can implement this too on the cloud as our own service e.g. on **Amazon Web Services (AWS)**, and access it using an API.
 
 If the app finds a matching theme with a high probability, it flags the same to the user.
 
@@ -44,16 +44,17 @@ If the app finds a matching theme with a high probability, it flags the same to 
 
 * It might be difficult to implement advance models or perfect analysis in real time without slippage, e.g. gift cards context by known family slipping through as potential fraud.
 * There is an **ethical concern** of hearing and transcribing what the other person is saying, without his / her knowledge.
+* Users too might have privacy concerns as conversations are transmitted to cloud for analysis.
 
 ## What next?
 
 - Mobile OS' expose only mixed audio with both speakers. If we could focus on just the other person's transcription, it could improve scam detection. We could implement **Speaker Diarization** which is separating the individual speakers audio and also **Speaker Identification**, which is identifying the user vs speaker at the other end.
-- It could speak to the scammer on behalf of the user using **Text-To-Speech (TTS)** and use algorithms to probe more about scammer's modus operandi, also saving user from trauma.
+- AI could speak to the scammer on behalf of the user using **Text-To-Speech (TTS)** and use algorithms to probe more about scammer's modus operandi, also saving user from trauma.
 - The app could expand to include other sources of fraud initiation e.g. chats, emails etc.
 - It could be trained to understand and work with more languages
 - It could partner with government agencies and connect with their servers and APIs for the following:
   - add new suspect numbers and types of fraud themes in its analysis as they evolve.
-  - provide information to user about how and where to report such frauds or can report them itself, directly to their servers.
+  - provide information to user about how and where to report such frauds or could report them itself.
 
 ## Acknowledgments
 
