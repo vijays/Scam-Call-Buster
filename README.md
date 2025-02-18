@@ -4,8 +4,8 @@ Copy the template, paste it to your GitHub README and edit! -->
 
 # Scam Call Buster
 
-Final project for the Building AI course.\
-Elements of AI, University of Helsinki, Finland.
+Final project for the [Building AI course](https://buildingai.elementsofai.com/).\
+[Elements of AI](https://www.elementsofai.com/), [University of Helsinki](https://www.helsinki.fi), Finland.
 
 ## Summary
 
